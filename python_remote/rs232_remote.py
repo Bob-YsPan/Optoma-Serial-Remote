@@ -4,7 +4,7 @@ import serial
 import serial.tools.list_ports
 import threading
 
-# Mapping for special keys
+# Mapping for keycode and key name
 KEYCODE_MAP = {
     37: 'Left', 38: 'Up', 39: 'Right', 40: 'Down',
     13: 'Enter', 188: ',',
@@ -69,7 +69,8 @@ class ProjectorRemote(tk.Tk):
         remote_frame.pack(padx=10, pady=5, fill="both", expand=True)
         btn_container = tk.Frame(remote_frame)
         btn_container.pack(expand=True)
-        
+
+        # Structure: (Display Name, Serial Command, Keycode/Char)
         commands = [
             ("", "", None), ("↑", "00140 10", 38), ("", "", None),
             ("←", "00140 11", 37), ("Enter", "00140 12", 13), ("→", "00140 13", 39),
