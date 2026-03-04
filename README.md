@@ -2,7 +2,7 @@
 
 A remote control solution for Optoma projectors via the RS232 (Serial) interface. This project was specifically tested on the **Optoma EX556**, but it should be compatible with most Optoma projectors that support the standard serial protocol.
 
-> **Note:** This project primarily consists of AI-generated code. Some bugs may exist. Pull requests are welcome!
+> **Note:** This project primarily consists of AI-generated code. Some bugs may exist.
 
 ---
 
