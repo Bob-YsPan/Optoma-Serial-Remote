@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- USB-to-Serial devices -->
+    <usb-device vendor-id="0403" /> <!-- FTDI -->
+    <usb-device vendor-id="067b" /> <!-- Prolific -->
+    <usb-device vendor-id="1a86" /> <!-- Qinheng CH34x -->
+    <usb-device vendor-id="10c4" /> <!-- Silicon Labs -->
+    <usb-device vendor-id="2341" /> <!-- Arduino -->
+</resources>
