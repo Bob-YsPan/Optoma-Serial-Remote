@@ -1,4 +1,4 @@
-# Optoma-Serial-Remote
+# Optoma Serial Remote
 
 A remote control solution for Optoma projectors via the RS232 (Serial) interface. This project was specifically tested on the **Optoma EX556**, but it should be compatible with most Optoma projectors that support the standard serial protocol.
 
@@ -20,6 +20,7 @@ The Android client allows you to control the projector using a mobile device and
 * **Compatibility:** Android 6.0 (Marshmallow) and newer.
 * **Plug & Play:** Once connected via a USB OTG adapter, a system dialog will prompt for permission to launch the app automatically.
 * **Build Environment:** Developed using Android Studio 2025.3.1 Patch 1.
+* **Installation:** * Pre-built executables are available in the [Releases](#) page.
 
 ---
 
@@ -43,7 +44,7 @@ Object[][] commands = {
 
 ```
 * **Layout:** The keypad is rendered in a **3-column grid**. Use `{"", "", null}` to create empty spacers (e.g., for arrow key alignment).
-* **Serial Command:** The hex/string code sent to the projector.
+* **Serial Command:** The string code sent to the projector.
 * **Android Keycode:** Used for triggering actions via an external physical keyboard.
 
 ### 2. Python Configuration
@@ -59,6 +60,10 @@ commands = [
 ]
 
 ```
+
+* **Layout:** The keypad is rendered in a **3-column grid**. Use `("", "", None)` to create empty and disabled button as the spacer (e.g., for arrow key alignment).
+* **Serial Command:** The string code sent to the projector.
+* **Keycode/Char:** Used for triggering actions via keyboard, alphanumeric key can use the char like "a" directly.
 
 If you add a special key (non-alphanumeric), you must also update the `KEYCODE_MAP`:
 
